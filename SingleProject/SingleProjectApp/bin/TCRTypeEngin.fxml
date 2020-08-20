@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="1500.0" prefWidth="1024.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerTCRTypeEngin">
+   <content>
+      <AnchorPane fx:id="paneMain" prefHeight="1500.0" prefWidth="1024.0" style="-fx-background-color: #fbfbfb;" stylesheets="@Style.css">
+         <children>
+            <AnchorPane layoutX="39.0" layoutY="44.0" prefHeight="502.0" prefWidth="962.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <JFXTreeTableView fx:id="tableEngin" layoutX="20.0" layoutY="66.0" prefHeight="550.0" prefWidth="449.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="66.0" />
+                  <JFXButton fx:id="bEnginNew" contentDisplay="GRAPHIC_ONLY" layoutX="859.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="19.0" />
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="bEnginEdit" contentDisplay="GRAPHIC_ONLY" layoutX="795.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.rightAnchor="70.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="20.0" />
+                     </graphic></JFXButton>
+                  <Label fx:id="labelTypeEngin" layoutX="20.0" layoutY="25.0" prefHeight="21.0" prefWidth="256.0" text="Type engins" textFill="#868895">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font></Label>
+                  <JFXButton fx:id="bEnginRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="793.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="126.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="19.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="bEnginDelete" contentDisplay="GRAPHIC_ONLY" layoutX="737.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="180.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="19.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="30.5" radius="14.625" width="30.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="23.0" layoutY="547.0" prefHeight="389.0" prefWidth="964.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="547.0">
+               <children>
+                  <JFXTreeTableView fx:id="tableEquipement" layoutX="20.0" layoutY="60.0" prefHeight="550.0" prefWidth="403.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+                  <JFXButton fx:id="bEquipeNew" contentDisplay="GRAPHIC_ONLY" layoutX="383.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="19" />
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="bEquipEdit" contentDisplay="GRAPHIC_ONLY" layoutX="304.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.rightAnchor="70.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="20.0" />
+                     </graphic></JFXButton>
+                  <Label fx:id="labelEquipement" layoutX="17.0" layoutY="24.0" prefHeight="21.0" prefWidth="310.0" text="Equipements" textFill="#868895">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font></Label>
+                  <JFXButton fx:id="bEquipementRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="796.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="126.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="19.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="bEquipDelete" contentDisplay="GRAPHIC_ONLY" layoutX="738.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="181.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="19.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="30.5" radius="14.625" width="30.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="950.0" prefHeight="389.0" prefWidth="963.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="950.0">
+               <children>
+                  <JFXTreeTableView fx:id="tableFonction" layoutX="24.0" layoutY="57.0" prefHeight="550.0" prefWidth="403.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+                  <JFXButton fx:id="bFonctNew" contentDisplay="GRAPHIC_ONLY" layoutX="377.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="19" />
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="bFonctEdit" contentDisplay="GRAPHIC_ONLY" layoutX="319.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.rightAnchor="70.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="20.0" />
+                     </graphic></JFXButton>
+                  <Label fx:id="labelTestFonction" layoutX="20.0" layoutY="25.0" prefHeight="21.0" prefWidth="275.0" text="Tests des fonctions" textFill="#868895">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font></Label>
+                  <JFXButton fx:id="bFonctionRefresh" contentDisplay="GRAPHIC_ONLY" layoutX="792.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="126.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="19.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="bFonctionDelet" contentDisplay="GRAPHIC_ONLY" layoutX="733.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="185.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="19.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="30.5" radius="14.625" width="30.0" />
+               </effect>
+            </AnchorPane>
+            <JFXButton fx:id="bAjout" contentDisplay="RIGHT" layoutX="863.0" layoutY="1401.0" prefHeight="38.0" prefWidth="123.0" stylesheets="@StyleButton.css" text="Ajouter" textFill="WHITE" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="1401.0">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="CHECK" size="22.0" />
+               </graphic></JFXButton>
+            <Label layoutX="561.0" layoutY="1467.0" AnchorPane.topAnchor="1467.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

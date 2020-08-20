@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneMain" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerTCREngin">
+   <children>
+      <AnchorPane layoutX="31.0" layoutY="48.0" prefHeight="628.0" prefWidth="964.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <JFXTreeTableView fx:id="tableEngin" layoutX="20.0" layoutY="66.0" prefHeight="467.0" prefWidth="924.0" stylesheets="@Style.css" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="66.0" />
+            <JFXButton fx:id="bEnginNew" contentDisplay="GRAPHIC_ONLY" layoutX="859.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="19.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="bEnginSuppr" contentDisplay="GRAPHIC_ONLY" layoutX="794.0" layoutY="20.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.rightAnchor="125.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="20.0" />
+               </graphic>
+            </JFXButton>
+            <Label fx:id="labelEngin" layoutX="20.0" layoutY="25.0" prefHeight="17.0" prefWidth="111.0" text="Engin" textFill="#868895">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="bEnginEdit" contentDisplay="GRAPHIC_ONLY" layoutX="848.0" layoutY="20.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.rightAnchor="71.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="20.0" />
+               </graphic>
+            </JFXButton>
+            <TextField fx:id="fieldSearch" layoutX="20.0" layoutY="551.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-radius: 1em;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" />
+            <FontAwesomeIconView fill="#ffc107" glyphName="SEARCH" layoutX="257.0" layoutY="571.0" size="22" AnchorPane.bottomAnchor="15.42745590209961" AnchorPane.leftAnchor="257.0" />
+         </children>
+         <effect>
+            <DropShadow color="#bbbbbb" height="30.5" radius="14.625" width="30.0" />
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="bSave" layoutX="874.0" layoutY="660.0" prefHeight="38.0" prefWidth="120.0" stylesheets="@StyleButton.css" text="Enregistrer" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="30.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="FLOPPY_ALT" size="20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bCancel" layoutX="740.0" layoutY="652.0" prefHeight="38.0" prefWidth="111.0" stylesheets="@StyleButton.css" text="cancel" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="173.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="20.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

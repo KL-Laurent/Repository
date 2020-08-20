@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneLogin" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #e64a19; }: ;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.LoginControler">
+   <children>
+      <AnchorPane layoutX="173.0" layoutY="142.0" prefHeight="325.0" prefWidth="418.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="209.0" AnchorPane.topAnchor="142.0">
+         <children>
+            <JFXButton fx:id="bLogin" accessibleText="B_CLAIMS" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="146.0" layoutY="248.0" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #F57C00; -fx-background-radius: 1em;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="145.0">
+               <font>
+                  <Font name="Bell MT Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="passField" focusColor="#f57c00" labelFloat="true" layoutX="90.0" layoutY="143.0" prefHeight="51.0" prefWidth="307.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="userField" focusColor="#f57c00" labelFloat="true" layoutX="90.0" layoutY="45.0" prefHeight="51.0" prefWidth="307.0" promptText="User" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

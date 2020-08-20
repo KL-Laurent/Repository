@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="230.0" style="-fx-background-color: #e64a19;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerDrawerAccueil">
+   <children>
+      <JFXButton accessibleText="B_EXIT" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="1.0" layoutY="632.0" prefHeight="53.0" prefWidth="270.0" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="22" />
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutX="20.0" layoutY="115.0" prefHeight="2.0" prefWidth="190.0" style="-fx-background-color: #fbfbfb;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="labelUser" alignment="CENTER" contentDisplay="CENTER" layoutY="79.0" prefHeight="17.0" prefWidth="253.0" text="User" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Brush Script MT Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="bConfig" accessibleText="B_CONFIG" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="1.0" layoutY="380.0" text="Configuration" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="GEAR" size="22" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bTypeEngin" accessibleText="B_TYPE_ENGIN" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="2.0" layoutY="231.0" text="Type engin" textAlignment="JUSTIFY" textFill="WHITE" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="TACHOMETER" size="22" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bFicheVerification" accessibleText="B_FICHE" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutY="131.0" text="Fiche de vérification" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bodoni MT" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="22" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bUser" accessibleText="B_USER" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutY="331.0" text="user" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+         <graphic>
+            <OctIconView fill="WHITE" glyphName="PERSON" size="22" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bPanne" accessibleText="B_PANNE" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutY="181.0" text="Pannes" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHAIN_BROKEN" size="22" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" disable="true" layoutX="98.0" layoutY="29.0" ripplerFill="#ffffff00" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <JFXButton fx:id="bEngin" accessibleText="B_ENGIN" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutY="281.0" text="Engin" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" size="22" />
+         </graphic>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="95.0" layoutY="58.0" size="50" wrappingWidth="40.28571319580078" />
+   </children>
+</AnchorPane>

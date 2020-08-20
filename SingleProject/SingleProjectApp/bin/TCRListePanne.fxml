@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: #fbfbfb;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerTCRListePanne">
+   <children>
+      <AnchorPane fx:id="labelTable" layoutX="36.0" layoutY="61.0" prefHeight="588.0" prefWidth="964.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <JFXTreeTableView fx:id="tableContenu" layoutX="24.0" layoutY="57.0" prefHeight="468.0" prefWidth="924.0" stylesheets="@Style.css" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="63.0" />
+            <JFXButton fx:id="bMiseAJour" contentDisplay="GRAPHIC_ONLY" layoutX="522.0" layoutY="33.0" prefHeight="21.0" prefWidth="57.0" stylesheets="@StyleButton.css" text="Mise à jour " textFill="WHITE" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="30.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="FLOPPY_ALT" size="23" />
+               </graphic></JFXButton>
+            <Label fx:id="labelListeEquipementPanne" layoutX="20.0" layoutY="34.0" prefHeight="21.0" prefWidth="185.0" text="Liste équipement en pannes" textFill="#9a9a9a">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bSearch" layoutX="20.0" layoutY="549.0" prefHeight="25.0" prefWidth="215.0" promptText="Search" style="-fx-background-radius: 1em;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#ffc107" glyphName="SEARCH" layoutX="256.0" layoutY="567.0" size="22.0" AnchorPane.bottomAnchor="17.42745590209961" AnchorPane.leftAnchor="256.0" />
+            <JFXButton fx:id="bFilter" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="57.0" stylesheets="@StyleButton.css" text="Mise à jour " textFill="WHITE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="FILTER" size="23" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#bcbcbc" height="28.42" radius="15.5625" width="35.83" />
+         </effect>
+      </AnchorPane>
+      <JFXDrawer fx:id="Drawer" defaultDrawerSize="350.0" direction="RIGHT" layoutX="738.0" layoutY="142.0" onDrawerClosed="#onClosed" onDrawerOpened="#onOpened" prefHeight="720.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton fx:id="bDrawer" contentDisplay="RIGHT" layoutX="40.0" layoutY="664.0" prefHeight="31.0" prefWidth="113.0" stylesheets="@StyleButton.css" text="Send" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="40.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ENVELOPE" size="20.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

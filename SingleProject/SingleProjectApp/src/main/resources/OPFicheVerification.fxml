@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerOPFicheVerification">
+   <content>
+      <AnchorPane fx:id="pane" prefHeight="2000.0" prefWidth="1024.0" style="-fx-background-color: white;" stylesheets="@Style.css">
+         <children>
+            <AnchorPane layoutX="20.0" layoutY="212.0" prefHeight="435.0" prefWidth="984.0" style="-fx-background-color: #fbfbfb;" stylesheets="@Style.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="212.0">
+               <children>
+                  <JFXTreeTableView fx:id="tableEquipement" layoutX="24.0" layoutY="57.0" prefHeight="550.0" prefWidth="403.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="63.0" />
+                  <Label fx:id="labelEquipementCritique" layoutX="20.0" layoutY="22.0" prefHeight="22.0" prefWidth="156.0" text="Equipements critiques" textFill="#868895">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="100.0" radius="32.0" width="30.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="677.0" prefHeight="513.0" prefWidth="984.0" style="-fx-background-color: #fbfbfb;" stylesheets="@Style.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="677.0">
+               <children>
+                  <JFXTreeTableView fx:id="tableEquipementNC" layoutX="24.0" layoutY="57.0" prefHeight="550.0" prefWidth="403.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="63.0" />
+                  <Label fx:id="labelEquipementsNonCritique" layoutX="20.0" layoutY="25.0" prefHeight="21.0" prefWidth="178.0" text="Equipements non critiques" textFill="#868895">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="100.0" radius="32.0" width="30.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="21.0" layoutY="1221.0" prefHeight="465.0" prefWidth="984.0" style="-fx-background-color: white;" stylesheets="@Style.css" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="19.0">
+               <children>
+                  <JFXTreeTableView fx:id="tableFonction" layoutX="24.0" layoutY="45.0" prefHeight="248.0" prefWidth="924.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="45.0" />
+                  <Label fx:id="labelTestFonction" layoutX="20.0" layoutY="22.0" prefHeight="21.0" prefWidth="237.0" text="Tests des fonctions" textFill="#868895">
+                     <font>
+                        <Font name="Bell MT" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="100.0" radius="32.0" width="30.0" />
+               </effect>
+            </AnchorPane>
+            <JFXTextArea fx:id="txtObservation" focusColor="#668cff" layoutX="23.0" layoutY="1722.0" prefHeight="101.0" prefWidth="901.0" promptText="Observation" style="-fx-background-color: white; -fx-fill: #868895; -fx-background-radius: 1em;" unFocusColor="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="17.0">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bbbbbb" height="100.0" radius="32.0" width="30.0" />
+               </effect>
+            </JFXTextArea>
+            <JFXButton fx:id="bEnvoyer" contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="262.0" layoutY="1866.0" prefHeight="62.0" prefWidth="501.0" stylesheets="@StyleButton.css" text="Envoyer" textFill="WHITE" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="261.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHARE" size="20.0" />
+               </graphic>
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="labelCodeEngin" layoutX="20.0" layoutY="31.0" prefHeight="21.0" prefWidth="106.0" text="Code engin : " textFill="#868895" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelDate" layoutX="20.0" layoutY="84.0" prefHeight="21.0" prefWidth="66.0" text="Date : " textFill="#868895" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelShift" layoutX="20.0" layoutY="138.0" prefHeight="21.0" prefWidth="66.0" text="Shift" textFill="#868895" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCodeEngin" focusColor="#ffc107" layoutX="129.0" layoutY="29.0" prefHeight="25.0" prefWidth="187.0" unFocusColor="#c9c4c4" AnchorPane.leftAnchor="129.0" />
+            <Label fx:id="labelHeureDebut" layoutX="645.0" layoutY="122.0" prefHeight="21.0" prefWidth="160.0" text="Cpt horaire debut : " textFill="#868895" AnchorPane.rightAnchor="219.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelHoraireFin" layoutX="645.0" layoutY="174.0" prefHeight="21.0" prefWidth="160.0" text="Cpt horaire fin : " textFill="#868895" AnchorPane.rightAnchor="219.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelJour" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="138.0" prefHeight="21.0" prefWidth="27.0" style="-fx-background-color: #FFC107;" text="J" textFill="WHITE" AnchorPane.leftAnchor="115.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNuit" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="138.0" prefHeight="21.0" prefWidth="27.0" style="-fx-background-color: #0277BD;" text="N" textFill="WHITE" AnchorPane.leftAnchor="115.0">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="date" defaultColor="#ff8f00" editable="false" layoutX="129.0" layoutY="81.0" prefHeight="25.0" prefWidth="226.0" stylesheets="@StyleButton.css" AnchorPane.leftAnchor="129.0" />
+            <JFXTimePicker fx:id="heureDebut" defaultColor="#ff8f00" layoutX="805.0" layoutY="118.0" prefHeight="25.0" prefWidth="200.0" stylesheets="@StyleButton.css" AnchorPane.rightAnchor="19.0" />
+            <JFXTimePicker fx:id="heureFin" defaultColor="#ff8f00" layoutX="803.0" layoutY="170.0" prefHeight="25.0" prefWidth="203.0" stylesheets="@StyleButton.css" AnchorPane.rightAnchor="18.0" />
+            <Label layoutX="515.0" layoutY="1971.0" prefHeight="17.0" prefWidth="0.0" />
+            <ImageView fitHeight="135.0" fitWidth="178.0" layoutX="828.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@../image/MICTSL1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

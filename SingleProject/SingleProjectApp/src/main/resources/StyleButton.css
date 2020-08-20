@@ -1,0 +1,43 @@
+
+
+.jfx-button {
+	
+	-fx-background-radius  : 1em ; 
+	-fx-background-color :    #e64a19;
+	-fx-border-radius: 1em;
+	
+	-fx-font-family:  'Bell MT';
+	-fx-text-fill : WHiTE ;
+	-fx-font-size: 15px;
+	-fx-alignment: center  ;
+	 /*-fx-prompt-text-fill:*/
+}
+
+
+.jfx-date-picker > .jfx-text-field {
+    -fx-opacity: 1 ;
+    -fx-font-family:  'Bell MT';
+	-fx-text-fill : black ;
+		-fx-font-size: 15px;
+}
+
+.jfx-combo-box{
+    -fx-opacity: 1 ;
+    -fx-font-family:  'Bell MT';
+	-fx-text-fill : black ;
+	-fx-font-size: 15px;
+}
+
+.jfx-text-field{
+    -fx-opacity: 1 ;
+    -fx-font-family:  'Bell MT';
+	-fx-text-fill : black ;
+	-fx-font-size: 15px;
+}
+
+.jfx-time-picker > .jfx-text-field {
+    -fx-opacity: 1 ;
+    -fx-font-family:  'Bell MT';
+	-fx-text-fill : black ;
+	-fx-font-size: 15px;
+}

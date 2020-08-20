@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panePrincipal" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.PrincipalControler">
+   <children>
+      <JFXButton fx:id="bsubmit" contentDisplay="RIGHT" layoutX="469.0" layoutY="592.0" prefHeight="75.0" prefWidth="178.0" style="-fx-background-color: #ff9956;" text="Submit" textFill="WHITE" AnchorPane.bottomAnchor="33.0" AnchorPane.rightAnchor="202.0">
+         <graphic>
+            <OctIconView cache="true" fill="WHITE" glyphName="CHECK" size="25.0" strokeType="INSIDE" wrappingWidth="18.25" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="bcancel" accessibleText="B_LOGIN" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="185.0" layoutY="592.0" prefHeight="75.0" prefWidth="178.0" style="-fx-background-color: #a2ee94;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="185.0">
+         <graphic>
+            <OctIconView cache="true" fill="WHITE" glyphName="X" size="25.0" strokeType="INSIDE" wrappingWidth="18.25" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXComboBox fx:id="comboClaimType" focusColor="BLACK" layoutX="517.0" layoutY="55.0" prefHeight="26.0" prefWidth="213.0" unFocusColor="#ff9956" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="55.0" />
+      <Label layoutX="400.0" layoutY="59.0" text="Equipement : " AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="59.0">
+         <font>
+            <Font name="Constantia Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView fx:id="listView" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="100.0" />
+      <JFXButton fx:id="bnew" contentDisplay="GRAPHIC_ONLY" layoutX="799.0" layoutY="100.0" prefHeight="47.0" prefWidth="49.0" style="-fx-background-color: #ff9956;" textFill="#79a1ff" AnchorPane.rightAnchor="0.0">
+         <graphic>
+            <OctIconView cache="true" fill="WHITE" glyphName="DIFF_ADDED" size="22.0" strokeType="INSIDE" wrappingWidth="18.25" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="bparametre" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="14.0" text="param">
+         <graphic>
+            <FontAwesomeIconView glyphName="COG" size="20.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

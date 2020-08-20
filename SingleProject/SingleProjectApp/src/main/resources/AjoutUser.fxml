@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerUser">
+   <children>
+      <AnchorPane layoutX="467.0" layoutY="69.0" prefHeight="625.0" prefWidth="964.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <JFXTreeTableView fx:id="tableUser" layoutX="24.0" layoutY="57.0" prefHeight="550.0" prefWidth="403.0" stylesheets="@Style.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+            <JFXButton fx:id="bUserNew" contentDisplay="GRAPHIC_ONLY" layoutX="899.0" layoutY="22.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Nouveau" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="19" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="bUserEdit" contentDisplay="GRAPHIC_ONLY" layoutX="847.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.rightAnchor="72.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="20.0" />
+               </graphic>
+            </JFXButton>
+            <Label fx:id="labelUtilisateur" layoutX="20.0" layoutY="25.0" prefHeight="21.0" prefWidth="185.0" text="Utilisateurs " textFill="#868895">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="bUserSuppr" contentDisplay="GRAPHIC_ONLY" layoutX="793.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="20.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#bbbbbb" height="30.5" radius="14.625" width="30.0" />
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="bEnregistrer" prefHeight="44.0" prefWidth="133.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="30.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="FLOPPY_ALT" size="20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bCancel" layoutX="701.0" layoutY="662.0" prefHeight="44.0" prefWidth="133.0" stylesheets="@StyleButton.css" text="Supprimer" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="190.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="20.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+.tree-table-row-cell:selected {
+    -fx-background-color:  #86889350;
+	-fx-background-radius  : 0em ; 
+}
+
+.tree-table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.tree-table-row-cell .label{
+    -fx-background-color: transparent;
+    -fx-alignment: top-right  ;
+    -fx-font-family:  'Bell MT';
+	-fx-text-fill : #868895 ;
+	-fx-font-size: 15 px ;
+
+}
+
+.tree-table-view .column-header  , .tree-table-view .column-header-background , .tree-table-view .column-header-background .filler {
+	-fx-background-color :    WHITE ;
+	-fx-background-radius  : 0em ; 
+	-fx-border-radius: 0;
+	
+	
+}
+.tree-table-view .column-header .label{
+	-fx-font-family:  'Bell MT';
+	-fx-text-fill : #868895 ;
+	-fx-alignment: top-center ;
+	-fx-font-size: 15px ;
+}
+
+/*linear-gradient(#131313 0.0%, #424141 100.0%); */
+
+.tree-table-view .column-header {
+	-fx-background-insets : 0;
+	-fx-border-radius: 0;
+	
+}
+
+.tree-table-view  {
+	-fx-background-radius  : 0em ; 
+	-fx-background-color :    WHITE ;
+	-fx-border-color: transparent;
+	-fx-border-radius: 0;
+}
+
+.tree-table-view .column-row .label{
+	-fx-font-family	: 'Bell MT';
+	-fx-text-fill : transparent ;
+}
+
+/*.jfx-combo-box .list-cell {
+	-fx-text-fill : black ;
+}
+
+.jfx-combo-box .text-input {
+	-fx-text-fill : red ;
+}*/
+
+.jfx-list-view{
+	-fx-background-insets : 0 ;
+	-fx-background-color:  transparent ; 
+}
+.jfx-list-cell:hover{
+	-fx-background-color:  #86889350 ; 
+	
+}
+
+
+.jfx-list-cell {
+	-fx-font-family	: "Bell MT";
+	-fx-text-fill : #868895 ; 
+	-fx-background-insets : 0 ;
+	/*-fx-pref-height: 80;  C bizzare sa interfere avec le combobox dans la liste*/
+	-fx-background-color:  transparent ; 
+	-fx-alignment: CENTER_RIGHT;
+	/*-fx-alignment: LEFT;*/
+}
+
+

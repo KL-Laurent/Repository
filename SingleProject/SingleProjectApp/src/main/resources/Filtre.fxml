@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.ControlerFiltre">
+   <children>
+      <JFXComboBox fx:id="CEngin" focusColor="#404040" labelFloat="true" layoutX="50.0" layoutY="159.0" prefHeight="28.0" prefWidth="261.0" promptText="Engin" stylesheets="@StyleButton.css" unFocusColor="#e64a19" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXComboBox fx:id="CEquipement" focusColor="#404040" labelFloat="true" layoutX="50.0" layoutY="214.0" prefHeight="28.0" prefWidth="261.0" promptText="Equipement" stylesheets="@StyleButton.css" unFocusColor="#e64a19" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXComboBox fx:id="CReparer" focusColor="#404040" labelFloat="true" layoutX="50.0" layoutY="265.0" prefHeight="28.0" prefWidth="261.0" promptText="Reparé" stylesheets="@StyleButton.css" unFocusColor="#e64a19" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXComboBox fx:id="CFermer" focusColor="#404040" labelFloat="true" layoutX="50.0" layoutY="318.0" prefHeight="28.0" prefWidth="261.0" promptText="Fermé" stylesheets="@StyleButton.css" unFocusColor="#e64a19" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXComboBox fx:id="CCreateur" focusColor="#404040" labelFloat="true" layoutX="50.0" layoutY="366.0" prefHeight="28.0" prefWidth="261.0" promptText="Createur" stylesheets="@StyleButton.css" unFocusColor="#e64a19" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXComboBox fx:id="CModificateur" focusColor="#404040" labelFloat="true" layoutX="50.0" layoutY="411.0" prefHeight="28.0" prefWidth="261.0" promptText="Modificateur" stylesheets="@StyleButton.css" unFocusColor="#e64a19" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXDatePicker fx:id="DateModification" defaultColor="#e64a19" layoutX="50.0" layoutY="85.0" prefHeight="25.0" prefWidth="250.0" AnchorPane.leftAnchor="50.0" />
+      <JFXCheckBox fx:id="checkClosed" layoutX="54.0" layoutY="475.0" text="Voir fermé " AnchorPane.leftAnchor="54.0">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="bCancel" accessibleText="B_CANCEL" contentDisplay="GRAPHIC_ONLY" layoutX="40.0" layoutY="529.0" prefHeight="41.0" prefWidth="108.0" stylesheets="@StyleButton.css" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bOk" accessibleText="B_OK" contentDisplay="GRAPHIC_ONLY" layoutX="205.0" layoutY="633.0" prefHeight="41.0" prefWidth="108.0" stylesheets="@StyleButton.css" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <graphic>
+            <OctIconView fill="WHITE" glyphName="CHECK" size="22" />
+         </graphic>
+      </JFXButton>
+      <JFXDatePicker fx:id="DateCreation" defaultColor="#e64a19" layoutX="50.0" layoutY="30.0" prefHeight="25.0" prefWidth="250.0" AnchorPane.leftAnchor="50.0" />
+   </children>
+   <effect>
+      <DropShadow color="#656565" />
+   </effect>
+</AnchorPane>
