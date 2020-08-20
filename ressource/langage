@@ -1,0 +1,66 @@
+Equipements critiques ;Critical equipment ;Fitaovana saro-pady
+Equipements non critiques ;Non-critical equipment ;Fitaovana tsy saro-pady
+Test des fonctions;function test;Fitsarana fitaovana
+Code engin :;Machine code :;Code engin :
+Date :;Date :;Daty :
+Shift :;Shift :;Fotoana iasana :
+Heure de début :;Start time :;Ora fanomboana :
+Heure de fin :;End time :;Ora fimaranana :
+Envoyé;Send;Alefa
+libellé;label;anarana
+statut;status;statut
+commentaire;comment;fanehoan-kevitra
+Fquipement;Fquipment;Fitaovana
+Rechercher;Search;Karohy
+Liste équipement en panne;List of broken equipment;Lisitra fitaovana simba
+Commentaire de l'opérateur;Operator's comment;Fanamarihan'ny pitondra
+réparé;fixed;Voambotra
+fermé;close;voakatona
+commentaire de la réparation;repair comment;Fanamarihan'ny panambotra
+Type engin;Machine type;Karazan'ny ilay engin
+Equipements;Equipment;Fitaovana
+Tests des fonctions;Function tests;Fitsapana ny fandehanany
+résponsable;responsible;tompon'andraikitra
+Ajouté;Add;Ampidirina
+Enregistré;Save;voarakitra
+critique;critical;saro-pady
+Engin;Machine;Engin
+Nom;Name;Anarana
+adresse;address;adiresy
+E-mail;E-mail;E-mail
+téléphone;phone number;telefaonina
+autorité;authority;fahefana
+Id;Id;Id
+mot de passe;password;teny miafina
+utilisateur;user;mpampiasa
+enregistré;saved;voarakitra
+actualisé;updated;voahova
+ajouté;added;voarakitra
+déverouillé;unlocked;voasokatra
+erreur;error;erreur
+Voulez vous vraiment supprimer cette item ?;Do you want to delete ?;Fafana ?
+Voulez vous vraiment enregister ? ;Do you want to save ?;Tahirizina ?
+Voulez vous vraiment editer ? ;Do you want to edit ?;Ovaina ?
+Voulez vous envoyer  ? ;Do you want to send ?;Elefa ? 
+Voulez vous envoyer ? ;Do you want to send ?;Elefa ? 
+Rapport de réclamation;Claims report;Tatitra momba ny fitaovana
+Pannes;breakdowns;Fahasimbana
+Type engin;Type engin;Type engin
+Engin;Engin;Engin
+Utilisateurs;Users;Mpampiasa
+Configuration;Configuration;Configuration
+Observation;Observation;Zavatra-tsikaritra
+Erreur de connexion, Vérifiez votre mot de pass ou votre identifiant;Connection error, Check your password or your username;Amarino tsara ny anarana sy ny teny miafina anao
+Erreur de connection, Vérifiez votre identifiant;Connection error, Check your username;Amarino tsara ny anaranao
+Échec de la connexion;Connection error;Échec de la connexion
+il y a un champ vide;there is an empty field;misy tsy feno
+Utilisateur;User;Anarana
+Mot de passe;Password;Teny miafina
+S'identifier;login;Fidirana
+Sauvegardé, redémarrer l'application pour appliquer la modification;Save, restart the application to apply the change;Voarakitra , avereno velomina mbaha hampiahatra ilay finovana
+Vide;Empty;Tsisy
+Date création;Creation date;Daty fananganana
+Date modification;Modification date;Daty fanovana
+créateur;creator;mpamorona
+modificateur;modifier;mpanova
+supprimé;deleted;voafafa
